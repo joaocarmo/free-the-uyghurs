@@ -1,0 +1,49 @@
+{
+  "name": "free-the-uyghurs",
+  "version": "0.0.1",
+  "description": "The human rights abuses the Uyghur people are facing at the hands of the Chinese government are worth our undivided attention.",
+  "main": "src/index.pug",
+  "private": true,
+  "scripts": {
+    "build": "parcel build --no-source-maps src/index.pug src/robots.txt",
+    "clean": "rm -rf ./.cache/ ./dist/",
+    "lint": "prettier --check .",
+    "lint:fix": "prettier --write .",
+    "start": "parcel src/index.pug",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaocarmo/free-the-uyghurs.git"
+  },
+  "keywords": [
+    "free",
+    "uyghurs",
+    "genocide",
+    "china",
+    "xinjiang",
+    "slavery",
+    "torture",
+    "muslims",
+    "islam",
+    "discrimination",
+    "racism",
+    "prosecution"
+  ],
+  "author": "João Carmo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joaocarmo/free-the-uyghurs/issues"
+  },
+  "homepage": "https://github.com/joaocarmo/free-the-uyghurs#readme",
+  "devDependencies": {
+    "normalize.css": "^8.0.1",
+    "parcel-bundler": "^1.12.4",
+    "pug": "^3.0.0",
+    "sass": "^1.26.10"
+  },
+  "optionalDependencies": {
+    "@prettier/plugin-pug": "^1.5.0",
+    "prettier": "^2.0.5"
+  }
+}

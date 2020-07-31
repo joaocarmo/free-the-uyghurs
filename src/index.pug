@@ -1,0 +1,14 @@
+include ./partials/config
+block config
+
+doctype
+html(lang=lang)
+  head
+    include ./partials/head
+  block styles
+    link(rel='stylesheet', href=stylesPath + "index.scss")
+body
+  main
+    include ./partials/main
+  block scripts
+    script(src=scriptsPath + "index.js", async)

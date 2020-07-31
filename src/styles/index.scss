@@ -1,0 +1,16 @@
+/* Normalize.css */
+@import '../../node_modules/normalize.css/normalize.css';
+
+/* Global Styles */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Partials */
+@import './partials/main.scss';
