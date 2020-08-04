@@ -1,3 +1,11 @@
+// Colors
+$bg-color: #eee;
+$dot-color: #666;
+
+// Dimensions
+$dot-size: 1px;
+$dot-space: 24px;
+
 main {
   position: fixed;
   display: flex;
@@ -7,8 +15,15 @@ main {
   left: 0;
   align-items: center;
   justify-content: center;
+  // Background pattern
+  background:
+    linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+    linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+    $dot-color;
+  background-size: $dot-space $dot-space;
 
   h1 {
+    text-align: center;
     text-transform: uppercase;
 
     a {

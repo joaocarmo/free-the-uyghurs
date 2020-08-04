@@ -3,11 +3,13 @@ footer {
   width: 100%;
   left: 0;
   bottom: 0;
+  background: transparent;
 
   p {
+    color: #999;
     font-size: 0.7rem;
     font-weight: 200;
     text-align: center;
-    opacity: 0.5;
+    background: transparent;
   }
 }
