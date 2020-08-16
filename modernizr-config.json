@@ -1,0 +1,5 @@
+{
+  "minify": false,
+  "options": [],
+  "feature-detects": ["test/img/webp"]
+}

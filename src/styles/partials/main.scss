@@ -1,34 +1,57 @@
-// Colors
-$bg-color: #eee;
-$dot-color: #666;
+body {
+  height: 100vh;
+  width: 100vw;
+  color: $color-2-hex;
+  background-color: $color-3-hex;
+  background-image: $bg-image-webp;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
 
-// Dimensions
-$dot-size: 1px;
-$dot-space: 24px;
+  *,
+  *::before,
+  *::after {
+    color: inherit;
+  }
 
-main {
-  position: fixed;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  align-items: center;
-  justify-content: center;
-  // Background pattern
-  background:
-    linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
-    linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
-    $dot-color;
-  background-size: $dot-space $dot-space;
+  #desktop {
+    display: inherit;
+  }
 
-  h1 {
-    text-align: center;
-    text-transform: uppercase;
+  #mobile {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
 
-    a {
-      color: black;
-      text-decoration: none;
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+
+      a {
+        text-decoration: none;
+      }
     }
+  }
+}
+
+.no-webp,
+.no-js {
+  body {
+    background-image: $bg-image-jpeg;
+  }
+}
+
+@media only screen and (max-device-width: ($mobile-max-width - 1px)) and (orientation: portrait) {
+  #desktop {
+    display: none !important;
+  }
+
+  #mobile {
+    display: flex !important;
   }
 }

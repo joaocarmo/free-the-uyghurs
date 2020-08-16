@@ -1,12 +1,14 @@
 {
   "name": "free-the-uyghurs",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "title": "Free The Uyghurs",
   "description": "The human rights abuses the Uyghur people are facing at the hands of the Chinese government are worth our undivided attention.",
   "main": "src/index.pug",
   "private": true,
   "scripts": {
-    "build": "parcel build --no-source-maps src/index.pug src/robots.txt",
+    "build": "yarn build:modernizr && yarn build:web",
+    "build:web": "parcel build --no-source-maps src/index.pug src/robots.txt",
+    "build:modernizr": "npx modernizr -c modernizr-config.json -d ./src/scripts/modernizr.js",
     "clean": "rm -rf ./.cache/ ./dist/",
     "lint": "prettier --check .",
     "lint:fix": "prettier --write .",
@@ -46,7 +48,7 @@
     "typography-theme-judah": "^0.16.19"
   },
   "optionalDependencies": {
-    "@prettier/plugin-pug": "^1.5.0",
+    "@prettier/plugin-pug": "^1.5.1",
     "prettier": "^2.0.5"
   }
 }

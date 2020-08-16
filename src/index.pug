@@ -2,7 +2,7 @@ include ./partials/config
 block config
 
 doctype
-html(lang=lang)
+html.no-js(lang=lang)
   head
     include ./partials/head
   block styles
@@ -14,3 +14,4 @@ body
     include ./partials/footer
   block scripts
     script(src=scriptsPath + "index.js", async)
+    script(src=scriptsPath + "modernizr.js", async)

@@ -23,6 +23,11 @@ yarn lint:fix
 yarn start
 ```
 
+## License
+
+The project's source code is licensed as [MIT](./LICENSE), but the images are
+_not licensed_.
+
 <!-- References -->
 
 [netlifybadge]: https://api.netlify.com/api/v1/badges/a9807720-b049-4b36-869d-b5da3fba30c5/deploy-status
