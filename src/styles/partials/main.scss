@@ -47,11 +47,13 @@ body {
 }
 
 @media only screen and (max-device-width: ($mobile-max-width - 1px)) and (orientation: portrait) {
-  #desktop {
-    display: none !important;
-  }
+  body {
+    #desktop {
+      display: none;
+    }
 
-  #mobile {
-    display: flex !important;
+    #mobile {
+      display: flex;
+    }
   }
 }
