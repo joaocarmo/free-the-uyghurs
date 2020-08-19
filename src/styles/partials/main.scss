@@ -14,28 +14,35 @@ body {
     color: inherit;
   }
 
-  #desktop {
-    display: inherit;
-  }
-
-  #mobile {
-    display: none;
-    position: fixed;
-    height: 100%;
-    width: 100%;
+  main {
+    position: absolute;
     top: 0;
     left: 0;
-    align-items: center;
-    justify-content: center;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+  }
+}
 
-    h1 {
-      text-align: center;
-      text-transform: uppercase;
+#desktop {
+  display: inherit;
+  height: 100%;
+  width: 100%;
+}
 
-      a {
-        text-decoration: none;
-      }
-    }
+#mobile {
+  display: none;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 
@@ -47,13 +54,11 @@ body {
 }
 
 @media only screen and (max-device-width: ($mobile-max-width - 1px)) and (orientation: portrait) {
-  body {
-    #desktop {
-      display: none;
-    }
+  #desktop {
+    display: none;
+  }
 
-    #mobile {
-      display: flex;
-    }
+  #mobile {
+    display: flex;
   }
 }

@@ -12,6 +12,15 @@ html {
   box-sizing: inherit;
 }
 
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
 /* Partials */
 @import './theme.scss';
 @import './partials/main.scss';
+@import './partials/main/desktop.scss';

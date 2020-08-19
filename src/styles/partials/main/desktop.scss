@@ -1,0 +1,49 @@
+#behind-fences {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: $fences;
+  animation-name: fences-zoom-out;
+  animation-duration: 16s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fences-zoom-out {
+  from {
+    transform: scale(1.2);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+#after-the-fences {
+  position: relative;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#tear-down-the-fences {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $color-3-hex;
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
