@@ -2,16 +2,18 @@
 #after-the-fences.page
 #tear-down-the-fences.page
   h1
-    a(href=lwtVideo, rel='noopener noreferrer')= title
+    a(href=lwtVideo, target='_blank', rel='noopener noreferrer')= title
 #about.page
   h1
-    a#about-open(href='#about') About
+    a#about-open(href='#about')= aboutPage.aboutLink
   h1
-    a(href=githubHref) Contribute
+    a(href=githubHref, target='_blank', rel='noopener noreferrer')= aboutPage.contributeLink
   h1
-    a(href=contactHref) Contact
+    a(href=contactHref)= aboutPage.contactLink
   dialog#about-dialog.fixed
-    h2 About
-    p= aboutText
+    h2= aboutPage.aboutLink
+    p= description
+    p= aboutPage.aboutText
+    p !{aboutPage.aboutTextCredits}
   section#copyright
     p= copyrightNotice

@@ -20,11 +20,16 @@ html {
   box-sizing: inherit;
 }
 
-a {
-  text-decoration: none;
-}
-
 /* Partials */
 @import './theme.scss';
 @import './partials/main.scss';
 @import './partials/main/desktop.scss';
+
+/* Basics */
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: $line-height;
+}
