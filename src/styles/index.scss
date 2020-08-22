@@ -1,6 +1,11 @@
 /* Normalize.css */
 @import '../../node_modules/normalize.css/normalize.css';
 
+/* Custom Properties */
+:root {
+  --vh: 1vh;
+}
+
 /* Global Styles */
 html {
   box-sizing: border-box;
