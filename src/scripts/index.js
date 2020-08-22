@@ -1,8 +1,9 @@
 // Scripts
+import dialogPolyfill from 'dialog-polyfill'
 import Typography from 'typography'
 import judahTheme from 'typography-theme-judah'
 import debounce from 'lodash.debounce'
-import { adjustHeight } from './utils/functions'
+import { adjustHeight, closeDialog, openDialog } from './utils/functions'
 
 const typography = new Typography(judahTheme)
 
@@ -13,3 +14,8 @@ typography.injectStyles()
 debouncedAdjustHeight()
 
 window.addEventListener('resize', debouncedAdjustHeight)
+
+const aboutElement = document.getElementById('about-open')
+const dialogElement = document.getElementById('about-dialog')
+dialogPolyfill.registerDialog(dialogElement)
+aboutElement.addEventListener('click', openDialog(dialogElement))

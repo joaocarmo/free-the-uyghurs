@@ -1,5 +1,17 @@
-#behind-fences
-#after-the-fences
-#tear-down-the-fences
+#behind-fences.page
+#after-the-fences.page
+#tear-down-the-fences.page
   h1
     a(href=lwtVideo, rel='noopener noreferrer')= title
+#about.page
+  h1
+    a#about-open(href='#about') About
+  h1
+    a(href=githubHref) Contribute
+  h1
+    a(href=contactHref) Contact
+  dialog#about-dialog.fixed
+    h2 About
+    p= aboutText
+  section#copyright
+    p= copyrightNotice
