@@ -45,12 +45,12 @@
     "normalize.css": "^8.0.1",
     "parcel-bundler": "^1.12.4",
     "pug": "^3.0.0",
-    "sass": "^1.26.10",
+    "sass": "^1.26.11",
     "typography": "^0.16.19",
     "typography-theme-judah": "^0.16.19"
   },
   "optionalDependencies": {
-    "@prettier/plugin-pug": "^1.5.1",
-    "prettier": "^2.0.5"
+    "@prettier/plugin-pug": "^1.6.1",
+    "prettier": "^2.1.2"
   }
 }

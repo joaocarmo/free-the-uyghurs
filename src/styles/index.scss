@@ -1,5 +1,6 @@
 /* Normalize.css */
 @import '../../node_modules/normalize.css/normalize.css';
+
 /* dialog-polyfill */
 @import '../../node_modules/dialog-polyfill/dist/dialog-polyfill.css';
 
@@ -24,6 +25,7 @@ html {
 @import './theme.scss';
 @import './partials/main.scss';
 @import './partials/main/desktop.scss';
+@import './partials/main/mobile.scss';
 
 /* Basics */
 a {

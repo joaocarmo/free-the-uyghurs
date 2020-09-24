@@ -94,3 +94,13 @@ dialog {
     opacity: 0.7;
   }
 }
+
+@media only screen and (max-device-height: ($mobile-max-height - 1px)) and (orientation: landscape) {
+  #about {
+    #copyright {
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
