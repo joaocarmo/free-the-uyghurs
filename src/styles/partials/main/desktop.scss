@@ -1,18 +1,18 @@
 .page {
-  position: relative;
-  top: 100%;
-  left: 0;
   height: 100%;
-  width: 100%;
+  left: 0;
+  position: relative;
   scroll-snap-align: start;
+  top: 100%;
+  width: 100%;
 }
 
 #behind-fences {
-  top: 0;
   background-image: $fences;
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  top: 0;
 }
 
 #after-the-fences {
@@ -20,10 +20,10 @@
 }
 
 #tear-down-the-fences {
-  display: flex;
   align-items: center;
-  justify-content: center;
   background-color: $color-3-hex;
+  display: flex;
+  justify-content: center;
 
   h1 {
     text-align: center;
@@ -32,11 +32,11 @@
 }
 
 #about {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
   background-color: $color-2-hex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   h1,
   h2 {
@@ -44,8 +44,8 @@
   }
 
   #copyright {
-    position: absolute;
     bottom: 0;
+    position: absolute;
     z-index: 0;
 
     p {
@@ -55,28 +55,27 @@
 }
 
 dialog {
-  color: black;
+  background-color: #fff;
   border-radius: 0.3rem;
   border-width: 0;
-  max-height: 70%;
-  max-width: 70%;
-  padding: 1rem;
-  background-color: white;
-
   /* prettier-ignore */
   box-shadow:
     0 11px 15px -7px rgba(0, 0, 0, 0.2),
     0 24px 38px 3px rgba(0, 0, 0, 0.14),
     0 9px 46px 8px rgba(0, 0, 0, 0.12);
+  color: #000;
+  max-height: 70%;
+  max-width: 70%;
   overflow-x: hidden;
   overflow-y: auto;
   overscroll-behavior: contain;
+  padding: 1rem;
 
   a {
     color: inherit;
 
     &::before {
-      background-color: black;
+      background-color: #000;
     }
 
     &:hover {
@@ -85,22 +84,18 @@ dialog {
   }
 
   &::backdrop {
-    background-color: white;
+    background-color: #fff;
     opacity: 0.7;
   }
 
   + .backdrop {
-    background-color: white;
+    background-color: #fff;
     opacity: 0.7;
   }
 }
 
 @media only screen and (max-device-height: ($mobile-max-height - 1px)) and (orientation: landscape) {
-  #about {
-    #copyright {
-      p {
-        margin-bottom: 0;
-      }
-    }
+  #about #copyright p {
+    margin-bottom: 0;
   }
 }

@@ -9,13 +9,13 @@ export const openDialog = (dialogElement) => (event) => {
   if (typeof dialogElement.showModal === 'function') {
     dialogElement.showModal()
 
-    dialogElement.addEventListener('click', (event) => {
+    dialogElement.addEventListener('click', (clickEvent) => {
       const rect = dialogElement.getBoundingClientRect()
       const isInDialog =
-        rect.top <= event.clientY &&
-        event.clientY <= rect.top + rect.height &&
-        rect.left <= event.clientX &&
-        event.clientX <= rect.left + rect.width
+        rect.top <= clickEvent.clientY &&
+        clickEvent.clientY <= rect.top + rect.height &&
+        rect.left <= clickEvent.clientX &&
+        clickEvent.clientX <= rect.left + rect.width
       if (!isInDialog) {
         dialogElement.close()
       }

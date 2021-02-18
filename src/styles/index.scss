@@ -22,10 +22,10 @@ html {
 }
 
 /* Partials */
-@import './theme.scss';
-@import './partials/main.scss';
-@import './partials/main/desktop.scss';
-@import './partials/main/mobile.scss';
+@import './theme';
+@import './partials/main';
+@import './partials/main/desktop';
+@import './partials/main/mobile';
 
 /* Basics */
 a {

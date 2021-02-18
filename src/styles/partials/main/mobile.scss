@@ -1,13 +1,13 @@
 .rotate-phone-icon {
-  display: block;
-  position: absolute;
-  top: 5%;
-  margin: 0 auto;
-  height: $rotateIconSize;
-  width: $rotateIconSize;
-  background-image: $rotatePhone;
+  background-image: $rotate-phone;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: block;
   filter: invert(100%);
+  height: $rotate-icon-size;
+  margin: 0 auto;
+  position: absolute;
+  top: 5%;
+  width: $rotate-icon-size;
 }
