@@ -1,0 +1,17 @@
+#timeline-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  overflow-x: scroll;
+  scroll-snap-align: start end;
+  width: 100%;
+}
+
+.timeline {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}

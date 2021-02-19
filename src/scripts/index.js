@@ -1,7 +1,7 @@
-import dialogPolyfill from 'dialog-polyfill'
-import Typography from 'typography'
-import judahTheme from 'typography-theme-judah'
 import debounce from 'lodash.debounce'
+import dialogPolyfill from 'dialog-polyfill'
+import judahTheme from 'typography-theme-judah'
+import Typography from 'typography'
 import { adjustHeight, openDialog } from './utils/functions'
 
 const typography = new Typography(judahTheme)

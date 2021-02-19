@@ -5937,6 +5937,11 @@ saxes@^3.1.9:
   dependencies:
     xmlchars "^2.1.1"
 
+scroll-horizontal@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/scroll-horizontal/-/scroll-horizontal-1.0.8.tgz#700f0972d18486af407f34235b5a002429eef018"
+  integrity sha512-lhFOWL6Fu5iOAyRwPkVrf3cwOIYBPF+qd2W5n8bZAp0otP9Bb40vfPp0bQVLTCcIDuzV5LdyNIqf5bAeOpLF3A==
+
 "semver@2 || 3 || 4 || 5", semver@^5.4.1, semver@^5.5.0:
   version "5.7.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"

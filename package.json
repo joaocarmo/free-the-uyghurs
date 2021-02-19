@@ -12,6 +12,7 @@
     "clean": "rm -rf ./.cache/ ./dist/",
     "lint:fix": "eslint . --fix && stylelint **/*.scss --fix",
     "lint": "eslint . && stylelint **/*.scss",
+    "postinstall": "patch-package",
     "pretty:fix": "prettier --write .",
     "pretty": "prettier --check .",
     "start": "parcel src/index.pug",
@@ -48,6 +49,7 @@
     "parcel-bundler": "^1.12.4",
     "pug": "^3.0.0",
     "sass": "^1.32.7",
+    "scroll-horizontal": "^1.0.8",
     "typography": "^0.16.19",
     "typography-theme-judah": "^0.16.19"
   },

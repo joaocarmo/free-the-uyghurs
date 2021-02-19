@@ -1,3 +1,8 @@
+@mixin dialog-backdrop {
+  background-color: #fff;
+  opacity: 0.7;
+}
+
 .page {
   height: 100%;
   left: 0;
@@ -20,10 +25,7 @@
 }
 
 #tear-down-the-fences {
-  align-items: center;
   background-color: $color-3-hex;
-  display: flex;
-  justify-content: center;
 
   h1 {
     text-align: center;
@@ -84,13 +86,11 @@ dialog {
   }
 
   &::backdrop {
-    background-color: #fff;
-    opacity: 0.7;
+    @include dialog-backdrop;
   }
 
   + .backdrop {
-    background-color: #fff;
-    opacity: 0.7;
+    @include dialog-backdrop;
   }
 }
 
