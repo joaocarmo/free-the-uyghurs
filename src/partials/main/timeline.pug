@@ -1,7 +1,9 @@
 section#timeline-container
   article.timeline
+    .start-learn
+      h1
+        a(href='#learn')= title
+      img.arrow.bounce(src=rightArrow, alt='')
+  article#learn.timeline.learn
     h1
-      a(href=lwtVideo, target='_blank', rel='noopener noreferrer')= title
-  //- article.timeline
-  //-   h1
-  //-     a(href=lwtVideo, target='_blank', rel='noopener noreferrer')= title
+      a(href=lwtVideo, target='_blank', rel='noopener noreferrer')= "China & Uighurs: Last Week Tonight with John Oliver"

@@ -15,3 +15,53 @@
   justify-content: center;
   width: 100%;
 }
+
+.start-learn {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.learn {
+  background-color: $color-white;
+
+  a {
+    color: $color-black;
+
+    &::before {
+      background-color: $color-black;
+    }
+
+    &:hover {
+      color: $color-black;
+    }
+  }
+}
+
+.arrow {
+  fill: $anchor-color;
+  height: 1.75em;
+  margin-bottom: 0;
+  margin-left: 1em;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(30px);
+  }
+  60% {
+    transform: translateX(15px);
+  }
+}

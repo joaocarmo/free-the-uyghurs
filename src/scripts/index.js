@@ -2,19 +2,31 @@ import debounce from 'lodash.debounce'
 import dialogPolyfill from 'dialog-polyfill'
 import judahTheme from 'typography-theme-judah'
 import Typography from 'typography'
-import { adjustHeight, openDialog } from './utils/functions'
+import {
+  adjustHeight,
+  globalHandleOnClick,
+  openDialog,
+} from './utils/functions'
+import { MODAL_OPEN_ABOUT_ID, MODAL_OPEN_DIALOG_ID } from './utils/constants'
 
-const typography = new Typography(judahTheme)
+const app = () => {
+  // Setup some UI stuff
+  const typography = new Typography(judahTheme)
+  typography.injectStyles()
 
-const debouncedAdjustHeight = debounce(adjustHeight, 500)
+  // Handle changes in the viewport
+  const debouncedAdjustHeight = debounce(adjustHeight, 500)
+  debouncedAdjustHeight()
+  window.addEventListener('resize', debouncedAdjustHeight)
 
-typography.injectStyles()
+  // Handle the modal actions
+  const aboutElement = document.getElementById(MODAL_OPEN_ABOUT_ID)
+  const dialogElement = document.getElementById(MODAL_OPEN_DIALOG_ID)
+  dialogPolyfill.registerDialog(dialogElement)
+  aboutElement.addEventListener('click', openDialog(dialogElement))
 
-debouncedAdjustHeight()
+  // Handle certain user interactions
+  window.addEventListener('click', globalHandleOnClick)
+}
 
-window.addEventListener('resize', debouncedAdjustHeight)
-
-const aboutElement = document.getElementById('about-open')
-const dialogElement = document.getElementById('about-dialog')
-dialogPolyfill.registerDialog(dialogElement)
-aboutElement.addEventListener('click', openDialog(dialogElement))
+app()
