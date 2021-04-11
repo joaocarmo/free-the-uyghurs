@@ -46,21 +46,21 @@
     "dialog-polyfill": "^0.5.6",
     "lodash.debounce": "^4.0.8",
     "normalize.css": "^8.0.1",
-    "parcel-bundler": "^1.12.4",
-    "pug": "^3.0.0",
-    "sass": "^1.32.7",
+    "parcel-bundler": "^1.12.5",
+    "pug": "^3.0.2",
+    "sass": "^1.32.8",
     "scroll-horizontal": "^1.0.8",
     "typography": "^0.16.19",
     "typography-theme-judah": "^0.16.19"
   },
   "devDependencies": {
-    "@prettier/plugin-pug": "^1.13.4",
-    "eslint": "^7.20.0",
+    "@prettier/plugin-pug": "^1.13.5",
+    "eslint": "^7.24.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-import": "^2.22.1",
     "prettier": "^2.2.1",
-    "stylelint": "^13.10.0",
+    "stylelint": "^13.12.0",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-sass-guidelines": "^8.0.0"
   }
