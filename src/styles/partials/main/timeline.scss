@@ -1,3 +1,5 @@
+@use '../../theme' as *;
+
 #timeline-container {
   display: flex;
   flex-direction: row;
@@ -58,9 +60,11 @@
   100% {
     transform: translateX(0);
   }
+
   40% {
     transform: translateX(30px);
   }
+
   60% {
     transform: translateX(15px);
   }

@@ -1,8 +1,9 @@
-/* Normalize.css */
-@import '../../node_modules/normalize.css/normalize.css';
-
-/* dialog-polyfill */
-@import '../../node_modules/dialog-polyfill/dist/dialog-polyfill.css';
+@use 'normalize.css/normalize.css';
+@use './theme' as *;
+@use './partials/main';
+@use './partials/main/desktop';
+@use './partials/main/mobile';
+@use './partials/main/timeline';
 
 /* Custom Properties */
 :root {
@@ -20,13 +21,6 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
-/* Partials */
-@import './theme';
-@import './partials/main';
-@import './partials/main/desktop';
-@import './partials/main/mobile';
-@import './partials/main/timeline';
 
 /* Basics */
 a {
