@@ -1,3 +1,5 @@
+@use '../theme' as *;
+
 body {
   /* Hack for mobile browsers */
   background-color: $color-3-hex;

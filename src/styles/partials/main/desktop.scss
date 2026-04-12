@@ -1,3 +1,5 @@
+@use '../../theme' as *;
+
 @mixin dialog-backdrop {
   background-color: #fff;
   opacity: 0.7;
