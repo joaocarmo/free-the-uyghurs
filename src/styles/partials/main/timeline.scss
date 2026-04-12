@@ -52,6 +52,12 @@
   animation: bounce 2s infinite;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .bounce {
+    animation: none;
+  }
+}
+
 @keyframes bounce {
   0%,
   20%,

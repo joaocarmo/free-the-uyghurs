@@ -87,12 +87,24 @@ dialog {
     }
   }
 
+  .dialog-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 1;
+    padding: 0;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+
   &::backdrop {
     @include dialog-backdrop;
   }
 }
 
-@media only screen and (max-device-height: ($mobile-max-height - 1px)) and (orientation: landscape) {
+@media only screen and (max-height: ($mobile-max-height - 1px)) and (orientation: landscape) {
   #about #copyright p {
     margin-bottom: 0;
   }
