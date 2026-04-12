@@ -1,6 +1,9 @@
+import { createRequire } from 'node:module'
+
+const require = createRequire(import.meta.url)
 const pkg = require('./package.json')
 
-module.exports = {
+export default {
   locals: {
     title: pkg.title,
     description: pkg.description,

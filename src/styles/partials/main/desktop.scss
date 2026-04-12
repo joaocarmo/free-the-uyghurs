@@ -60,16 +60,16 @@ dialog {
   background-color: #fff;
   border-radius: 0.3rem;
   border-width: 0;
+
   /* prettier-ignore */
   box-shadow:
-    0 11px 15px -7px rgba(0, 0, 0, 0.2),
-    0 24px 38px 3px rgba(0, 0, 0, 0.14),
-    0 9px 46px 8px rgba(0, 0, 0, 0.12);
+    0 11px 15px -7px rgb(0 0 0 / 20%),
+    0 24px 38px 3px rgb(0 0 0 / 14%),
+    0 9px 46px 8px rgb(0 0 0 / 12%);
   color: #000;
   max-height: 70%;
   max-width: 70%;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden auto;
   overscroll-behavior: contain;
   padding: 1rem;
 
@@ -86,10 +86,6 @@ dialog {
   }
 
   &::backdrop {
-    @include dialog-backdrop;
-  }
-
-  + .backdrop {
     @include dialog-backdrop;
   }
 }

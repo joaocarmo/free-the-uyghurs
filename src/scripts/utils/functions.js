@@ -1,5 +1,13 @@
 import { TIMELINE_START_HREF } from './constants'
 
+export const debounce = (fn, ms) => {
+  let timer
+  return (...args) => {
+    clearTimeout(timer)
+    timer = setTimeout(() => fn(...args), ms)
+  }
+}
+
 export const adjustHeight = () => {
   const vh = window.innerHeight * 0.01
   document.documentElement.style.setProperty('--vh', `${vh}px`)
