@@ -1,0 +1,6 @@
+allowBuilds:
+  '@parcel/watcher': true
+  core-js: true
+  deasync: true
+  fsevents: true
+  parcel-bundler: true
