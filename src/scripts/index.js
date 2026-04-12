@@ -21,7 +21,15 @@ const app = () => {
   // Handle the modal actions
   const aboutElement = document.getElementById(MODAL_OPEN_ABOUT_ID)
   const dialogElement = document.getElementById(MODAL_OPEN_DIALOG_ID)
-  aboutElement.addEventListener('click', openDialog(dialogElement))
+
+  if (aboutElement && dialogElement) {
+    aboutElement.addEventListener('click', openDialog(dialogElement))
+
+    const closeButton = dialogElement.querySelector('.dialog-close')
+    if (closeButton) {
+      closeButton.addEventListener('click', () => dialogElement.close())
+    }
+  }
 
   // Handle certain user interactions
   window.addEventListener('click', globalHandleOnClick)

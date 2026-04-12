@@ -1,9 +1,15 @@
 meta(charset='utf-8')
 title= title.toUpperCase()
 meta(name='description', content=description)
+meta(property='og:title', content=title)
+meta(property='og:description', content=description)
+meta(property='og:type', content='website')
+meta(name='twitter:card', content='summary')
+meta(name='twitter:title', content=title)
+meta(name='twitter:description', content=description)
 meta(
   name='viewport',
-  content='width=device-width, minimum-scale=1.0,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover, shrink-to-fit=no, user-scalable=no'
+  content='width=device-width, initial-scale=1.0, viewport-fit=cover'
 )
 link(
   rel='icon',
